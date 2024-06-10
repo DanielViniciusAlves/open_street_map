@@ -64,7 +64,7 @@ defmodule OpenStreetMap.Client do
   defp modify_key(key), do: key
 
   # add type of request to url
-  defp prepare_url(url, type), do: "#{type}?#{url}"
+  defp prepare_url(url, type), do: "#{type}.php?#{url}"
 
   # define params for request
   defp base_url(args), do: args[:hostname] || "https://nominatim.openstreetmap.org/"
